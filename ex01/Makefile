@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/04/15 21:17:43 by jpancorb          #+#    #+#              #
-#    Updated: 2025/04/15 21:21:44 by jpancorb         ###   ########.fr        #
+#    Created: 2025/04/16 22:54:57 by jpancorb          #+#    #+#              #
+#    Updated: 2025/04/17 00:32:34 by jpancorb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= my_first_class_in_orthodox_canonical_form
+NAME	= towards_a_more_useful_fixed_point_number_class
 SRCS	= main.cpp Fixed.cpp
 DEP		= Fixed.hpp
 CFLAGS	= -Wall -Wextra -Werror -std=c++98 
