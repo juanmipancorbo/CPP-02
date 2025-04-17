@@ -6,11 +6,11 @@
 #    By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/16 22:54:57 by jpancorb          #+#    #+#              #
-#    Updated: 2025/04/17 22:45:27 by jpancorb         ###   ########.fr        #
+#    Updated: 2025/04/17 22:47:15 by jpancorb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= towards_a_more_useful_fixed_point_number_class
+NAME	= now_we_are_talking
 SRCS	= main.cpp Fixed.cpp
 DEP		= Fixed.hpp
 CFLAGS	= -Wall -Wextra -Werror -std=c++98 

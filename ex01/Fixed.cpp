@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 22:55:06 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/17 00:30:17 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/17 23:27:53 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ Fixed::~Fixed()
 
 int		Fixed::getRawBits() const
 {
-	std::cout << "getRawBits member function called" << std::endl;
+	// std::cout << "getRawBits member function called" << std::endl;
 	return this->_value;
 }
 
