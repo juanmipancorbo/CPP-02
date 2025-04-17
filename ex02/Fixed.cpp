@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 22:55:06 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/17 23:27:33 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/18 00:07:40 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,8 @@ int	Fixed::toInt() const
 	return _value >> _fracBits;
 }
 
-// Comparison
+
+// Comparison-----------------------------------------------------------------------
 bool Fixed::operator>(Fixed const &other) const { return _value > other._value; }
 bool Fixed::operator<(Fixed const &other) const { return _value < other._value; }
 bool Fixed::operator>=(Fixed const &other) const { return _value >= other._value; }
@@ -81,7 +82,8 @@ bool Fixed::operator<=(Fixed const &other) const { return _value <= other._value
 bool Fixed::operator==(Fixed const &other) const { return _value == other._value; }
 bool Fixed::operator!=(Fixed const &other) const { return _value != other._value; }
 
-// Arithmetic
+
+// Arithmetic-----------------------------------------------------------------------
 Fixed Fixed::operator+(Fixed const &other) const
 {
 	return Fixed(this->toFloat() + other.toFloat());
@@ -102,7 +104,8 @@ Fixed Fixed::operator/(Fixed const &other) const
 	return Fixed(this->toFloat() / other.toFloat());
 }
 
-// Increment / Decrement
+
+// Increment / Decrement-----------------------------------------------------------
 Fixed &Fixed::operator++()
 {
 	_value++;
@@ -129,7 +132,8 @@ Fixed Fixed::operator--(int)
 	return temp;
 }
 
-// min / max
+
+// min / max----------------------------------------------------------------------
 Fixed &Fixed::min(Fixed &a, Fixed &b)
 {
 	return (a < b ? a : b);
@@ -150,7 +154,8 @@ Fixed const &Fixed::max(Fixed const &a, Fixed const &b)
 	return (a > b ? a : b);
 }
 
-// Insertion overload
+
+// Insertion overload-------------------------------------------------------------
 std::ostream & operator<<(std::ostream &out, const Fixed &fixed)
 {
 	out << fixed.toFloat();
