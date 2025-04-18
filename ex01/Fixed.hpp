@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 22:55:15 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/17 00:22:03 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/18 13:18:30 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ class Fixed
 
 	public:
 		Fixed();								// Default constructor
-		Fixed(const int intVal);
-		Fixed(const float floatVal);
+		Fixed(const int intVal);				// Const int constructor
+		Fixed(const float floatVal);			// Const float constructor
 		Fixed(const Fixed &other);				// Copy constructor
 		Fixed &	operator=(const Fixed &other);	// Copy assignment operator
 		~Fixed();								// Destructor
@@ -37,8 +37,7 @@ class Fixed
 		int		toInt() const;
 };
 
-		// Insertion operator overload //
-
+// Insertion operator overload
 std::ostream & operator<<(std::ostream &out, const Fixed &fixed);
 
 #endif // FIXED_H

@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 00:30:37 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/18 13:00:01 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/18 13:30:16 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,13 @@ int main(void)
 	std::cout << "e = " << e << std::endl;
 	std::cout << "++e = " << ++e << std::endl;
 	std::cout << "e++ = " << e++ << std::endl;
-	std::cout << "e = " << e << std::endl;
+	std::cout << "e   = " << e << std::endl;
 
 	std::cout << "\nDecrement: " << std::endl;
 	std::cout << "e = " << e << std::endl;
 	std::cout << "--e = " << --e << std::endl;
 	std::cout << "e-- = " << e-- << std::endl;
-	std::cout << "e = " << e << std::endl;
+	std::cout << "e   = " << e << std::endl;
 
 	std::cout << "\nMin: (c, d) = " << Fixed::min(c, d) << std::endl;
 	std::cout << "Max: (c, d) = " << Fixed::max(c, d) << std::endl;
