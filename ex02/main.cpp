@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 00:30:37 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/18 00:57:22 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/18 13:00:01 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,10 @@ int main(void)
 	// My tests
 	Fixed const c(1.5f);
 	Fixed const d(2.5f);
-	Fixed 		e(256);
-	Fixed 		f(4);
+	Fixed 		e(3);
 
-
-	std::cout << "\nMy tests: -------------------------------" << std::endl;
-	std::cout << "c = 1.5f\nd = 2.5f\ne = 3\nf = 4\n" << std::endl;
+	std::cout << "\n----------------------My tests--------------------------" << std::endl;
+	std::cout << "c = 1.5f\nd = 2.5f\ne = 3"<< std::endl;
 
 	std::cout << "\nComparison operators:" << std::endl;
 	std::cout << "c > d  ->   " << bool (c > d) << std::endl;
@@ -51,15 +49,20 @@ int main(void)
 	std::cout << "c * d = " << c * d << std::endl;
 	std::cout << "d / c = " << c / d << std::endl;
 
-	std::cout << "\nIncrement / Decrement:" << std::endl;
+	std::cout << "\nIncrement: " << std::endl;
+	std::cout << "e = " << e << std::endl;
 	std::cout << "++e = " << ++e << std::endl;
-	std::cout << "e++ = " << e++ << " / e = " << e << std::endl;
-	// std::cout <<  << std::endl;
-	// std::cout <<  << std::endl;
+	std::cout << "e++ = " << e++ << std::endl;
+	std::cout << "e = " << e << std::endl;
 
-	// std::cout << "\nMin / Max:" << std::endl;
-	// std::cout <<  << std::endl;
-	// std::cout <<  << std::endl;
+	std::cout << "\nDecrement: " << std::endl;
+	std::cout << "e = " << e << std::endl;
+	std::cout << "--e = " << --e << std::endl;
+	std::cout << "e-- = " << e-- << std::endl;
+	std::cout << "e = " << e << std::endl;
+
+	std::cout << "\nMin: (c, d) = " << Fixed::min(c, d) << std::endl;
+	std::cout << "Max: (c, d) = " << Fixed::max(c, d) << std::endl;
 
 	return 0;
 }
